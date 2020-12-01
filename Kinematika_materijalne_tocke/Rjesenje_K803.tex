@@ -1,0 +1,22 @@
+
+
+Kako bismo mogli izračunati iznos ubrzanja moramo prvo izračunati tangencijalno $\vec{a}_{\tau}$ i radijalno $\vec{a}_r$ ubrzanje.
+$$ \vec{a}_{\tau}=\frac{d^2s}{dt^2} \vec{\tau} =\frac{dv}{dt} \vec{\tau} $$
+$$v=\frac{ds}{dt}=\frac{d}{dt}\left( s_0+b(1-\mathrm{e}^{-ct}) \right)=bc\mathrm{e}^{-ct} $$
+$$ \frac{dv}{dt}=\frac{d}{dt}\left( bc\mathrm{e}^{-ct}  \right)=- bc^2\mathrm{e}^{-ct} $$
+$$ \vec{a}_{\tau}= - bc^2\mathrm{e}^{-ct} \vec{\tau}$$
+Ostaje za izračunati radijalnu komponentu ubrzanja.
+$$\vec{a}_r = \frac{1}{R} \left( \frac{ds}{dt} \right)^2\vec{n}  $$
+$$\vec{a}_r = \frac{b^2 c^2 \mathrm{e}^{-2ct}}{R} \vec{n}$$
+Ukupno ubrzanje je:
+$$ \vec{a}(t) = \vec{a}_{\tau}+\vec{a}_r=- bc^2\mathrm{e}^{-ct} \vec{\tau} + \frac{b^2 c^2 \mathrm{e}^{-2ct}}{R} \vec{n} $$
+
+$$ |\vec{a}(t)|= \sqrt{\left(- bc^2\mathrm{e}^{-ct} \right)^2 + \left(\frac{b^2 c^2 \mathrm{e}^{-2ct}}{R} \right)^2} =
+\sqrt{b^2c^4 \mathrm{e}^{-2ct}\left(1+\frac{b^2\mathrm{e}^{-2ct}}{R^2}  \right)}$$
+$$ |\vec{a}(t)|= bc^2 \mathrm{e}^{-ct}\sqrt{1+\frac{b^2\mathrm{e}^{-2ct}}{R^2} }$$
+
+$|\vec{a}(t=3\ s)|=8m\cdot (0,2s^{-1})^2\cdot \mathrm{e}^{-0,2s^{-1}\cdot3s} \sqrt{1+\frac{(8m)^2 \mathrm{e}^{-2\cdot 0,2s^{-1}\cdot 3s}}{(2m)^2}}=
+0,4236ms^{-2}$
+
+$|\vec{a}(t=6\ s)|=8m\cdot (0,2s^{-1})^2\cdot \mathrm{e}^{-0,2s^{-1}\cdot6s} \sqrt{1+\frac{(8m)^2 \mathrm{e}^{-2\cdot 0,2s^{-1}\cdot 6s}}{(2m)^2}}=
+0,1509ms^{-2}$

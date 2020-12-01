@@ -1,0 +1,37 @@
+
+
+\begin{enumerate}[label=\alph*)]
+  \item $\vec{r}(t)=\vec{r}_0+\vec{v}_0t+\frac{1}{2}\vec{g}t^2$
+
+Početni uvijeti: $\vec{r}_0=z_0\vec{k},\ \  \ \ \vec{v}_0=v_0\cos\alpha\vec{j}+v_0\sin\alpha\vec{k} \ \ \ \ \vec{g}=-g\vec{k}$
+
+$\vec{r}(t)=z_0\vec{k}+v_0\cos\alpha\vec{j}t+v_0\sin\alpha\vec{kt}-\frac{1}{2}gt^2\vec{k}$
+
+$\vec{r}(t)=(v_0\cos\alpha\cdot t)\vec{j}+   (z_0+v_0\sin\alpha\cdot t-\frac{1}{2}gt^2)\vec{k}$
+
+$\vec{r}(t)=y\vec{j}+z\vec{k}$, gdje je $y=v_0\cos\alpha \cdot t$ i $z= z_0+v_0\sin\alpha\cdot t-\frac{1}{2}gt^2$
+
+Vrijeme udarca tijela o tlo $t=t_u$ kada je $z=0\ \ \ \Rightarrow\ \ \ 0=z_0+v_0\sin\alpha\cdot t-\frac{1}{2}gt^2$ 
+$$
+t_{1,2}=\frac{v_0\sin\alpha\pm \sqrt{(v_0\sin \alpha)^2+2gz_0} }{g}.
+$$
+Za navedene podatke rješenja su $t_1=2,77\ s$ i $t_2=-0,74\ s$, fizikalno rješenje je $t_1=2,77\ s$.
+\item Kako bismo dobili domet, $D=v_y t $ tijela moramo znati komponentu brzine u $y$-smjeru i vrijeme udarca tijala o tlo. 
+Vrijeme znamo iz prvog djela zadatka, a komponentu brzine možemo dobiti
+$$\vec{v}(t)=\frac{dr}{dt}=\frac{d}{dt}\left((v_0\cos\alpha\cdot t)\vec{j}+   (z_0+v_0\sin\alpha\cdot t-\frac{1}{2}gt^2)\vec{k}\right).  $$
+Dobivamo komponente brzine su: $v_y=v_0\cos\alpha \ \ \ $ i  $\ \ \ v_z=v_0\sin\alpha -gt$. 
+
+$D=y(t=t_1)= v_0\cos\alpha \cdot t_1$
+
+$D=y(t=2,77\ s)= 20\ ms^{-1}\cos30^\circ \cdot 2,77\ s=47,98\ m$
+\item Potražimo trenutak u kojem je komponenta brzine u $z$-smjeru $v_z=0$ jer je tada tijelo u na maksimalnoj visini $z=z_{max}$.
+$$\vec{v}(t)=v_0\cos\alpha\vec{j}+ (v_0\sin\alpha -gt)\vec{k}$$ 
+komponente brzina su: 
+$v_y(t)=v_0\cos\alpha$ i  $v_z(t)=v_0\sin\alpha -gt.$
+Nakom izjednačivanja komponete $v_z$ s nulom izrazimo
+$$v_0\sin\alpha -gt=0\ \ \ \ \Rightarrow  \ \ \ \  t_H=\frac{v_0\sin\alpha}{g}.$$
+Potražimo maksimalnu visinu
+$$ z_{max} = z(t=t_H)= z_0+v_0\sin\alpha\cdot t_H -\frac{1}{2}gt_H^2$$
+$$ z_{max} = z_0+v_0\sin\alpha\cdot \frac{v_0\sin\alpha}{g} -\frac{1}{2}g\left(\frac{v_0\sin\alpha}{g}\right)^2$$
+$$ z_{max} = z_0 + \frac{v_0^2\sin^2\alpha}{2g} = 15,1\ m$$
+\end{enumerate}

@@ -1,0 +1,128 @@
+
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{report}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={165mm,237mm},
+ left=25mm,
+ top=30mm,
+ }
+
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{subcaption}
+
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{amssymb}
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Lista
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumitem} % Customize lists
+\setlist{itemsep=0.3pt} % Reduce spacing between bullet points and numbered lists
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Brojaci
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{zadatak} %%%% Brojac
+\newcounter{cjelina}
+\setcounter{cjelina}{8}  %%%%%   Mjenjati ovisno o listu   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%\setcounter{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[croatian]{babel}
+%\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+%\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents  Ovo je za hr
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+\usepackage{color}
+\definecolor{boja}{RGB}{50, 180, 50}
+%-----------------------------_-----------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\title{Fizika I - List sa zadacima 1} % Title
+
+%\author{John \textsc{Smith}} % Author name
+
+%\date{\today} % Date for the report
+
+\begin{document}
+
+%\maketitle % Insert the title, author and date
+
+\setlength{\textfloatsep}{3pt}  %%%%  udaljenost slike i teksta
+\setlength{\intextsep}{3pt}
+
+
+
+\textsc{{\LARGE Fizika I - List sa zadacima \thecjelina \  - rješenja}}
+
+{\footnotesize  \today}
+\vspace{1.0cm}
+
+%\textit{Kod rješavanja zadataka koristite se sljedećim numeričkim vrijednostima:
+%\begin{itemize}
+% \item gravitacijska konstanta: $\gamma = 6,67\cdot  10^{−11}\ Nm^2kg^{−2}$
+% \item masa Zemlje: $M_Z = 5,98 \cdot  10^{24}\ kg$
+% \item polumjer Zemlje: $R_Z = 6,371 \cdot 10^6\ m$
+% \item iznos ubrzanja slobodnog pada: $g = 9,81\ ms^{−2}$
+%\end{itemize}
+%}
+
+\vspace{1.2cm} 
+
+\input{04_Kruto_tijelo/Zadatak_8_1}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{04_Kruto_tijelo/Rjesenje_8_1}
+\vspace{0.8cm} 
+
+\newpage
+\input{04_Kruto_tijelo/Zadatak_8_2}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{04_Kruto_tijelo/Rjesenje_8_2}
+\vspace{0.8cm}
+
+
+\newpage
+\input{04_Kruto_tijelo/Zadatak_8_3}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{04_Kruto_tijelo/Rjesenje_8_3}
+%\vspace{0.8cm}
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{apalike}
+
+%\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}

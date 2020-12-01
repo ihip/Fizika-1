@@ -1,0 +1,257 @@
+
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={165mm,237mm},
+ left=25mm,
+ top=30mm,
+ }
+
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+
+\usepackage[document]{ragged2e}  %%  za obostrano poravnanje
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Lista
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumitem} % Customize lists
+%\setlist{topsep=1.8mm,itemsep=0.01mm} % Moze se posebno definirati razmak izmedu redova i prvog reda
+\setlist{nolistsep}  % Reduce spacing between bullet points and numbered lists
+
+
+\usepackage{setspace}  %% ovo je za razmak među redovima
+%\onehalfspacing
+%\doublespacing
+\setstretch{1.2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Brojaci
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{zadatak} %%%% Brojac
+\newcounter{cjelina}
+\setcounter{cjelina}{1}  %%%%%   Mjenjati ovisno o listu   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%\setcounter{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[croatian]{babel}
+%\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+%\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents  Ovo je za hr
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+
+\usepackage{color}
+\definecolor{boja}{RGB}{50, 180, 50}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\Large Sveučilište u Zagrebu\\ Geotehnički fakultet}\\[1.0cm] % Name of your university/college
+%\textsc{\Large Major Heading}\\[0.5cm] % Major heading such as course name
+%\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+\includegraphics{logo_gfv.png}\\[2.0cm] % Include a department/university logo - this will require the graphicx package
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Zadaci s vježbi iz kolegija Fizika 1}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\textsc{\large Akademska godina 2018./2019.}\\[0.5cm] % Minor heading such as course title
+
+%{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+\justify
+ 
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{justify} 
+Ovi listovi sa zadacima sadrže sve zadatke koji su rješavani
+tijekom semestra na auditornim vježbama. Studenti koji nisu
+redovito pohađali vježbe iz kolegija Fizika 2 dužni su ove listove
+odštampati, na njima riješiti sve zadatke i to predati prije
+usmenog kolokvija na kojem će odabrane zadatke morati znati
+riješiti na ploči kako bi dobili potpis iz kolegija. Ukoliko ne prođu
+usmeni kolokvij morat će ponovo rješavati i predati zadatke kako
+bi ponovo pristupili kolokviju.
+\end{justify}
+\end{minipage}\\[3cm]
+\end{center}
+
+\Large{
+\begin{center}
+ \textbf{Obavezno ispuniti:\\}
+\end{center}
+\vspace{0.2cm}
+\begin{center}
+\begin{tabular}{l r}
+Prezime: &\rule{6cm}{0.3mm}\\
+
+Ime:  &\rule{6cm}{0.3mm}\\ 
+
+Potpis:&\rule{6cm}{0.6mm}\\
+\end{tabular}
+\end{center}
+}
+
+%\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+%\textsc{  {\Huge Fizika I - List sa zadacima \thecjelina}}
+
+%\vspace{2.5cm}
+
+%\setlength{\textfloatsep}{1pt}  %%%%  udaljenost slike i teksta
+%\setlength{\intextsep}{1pt}
+
+
+
+\begin{justify}
+
+\include{00_Ponavljanje/Zadatak_1_1}
+
+\include{00_Ponavljanje/Zadatak_1_2}
+
+\include{00_Ponavljanje/Zadatak_1_3}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{01_Kinematika/Zadatak_2_1}
+
+\include{01_Kinematika/Zadatak_2_2}
+
+\include{01_Kinematika/Zadatak_2_3}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{01_Kinematika/Zadatak_3_1}
+
+\include{01_Kinematika/Zadatak_3_2}
+
+\include{01_Kinematika/Zadatak_3_3}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{02_Dinamika/Zadatak_4_1}
+
+\include{02_Dinamika/Zadatak_4_2}
+
+\include{02_Dinamika/Zadatak_4_3}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{02_Dinamika/Zadatak_5_1}
+
+\include{02_Dinamika/Zadatak_5_2}
+
+\include{02_Dinamika/Zadatak_5_3}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{03_Zakoni_ocuvanja/Zadatak_6_1}
+
+\include{03_Zakoni_ocuvanja/Zadatak_6_2}
+
+\include{03_Zakoni_ocuvanja/Zadatak_6_3}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{03_Zakoni_ocuvanja/Zadatak_7_1}
+
+\include{03_Zakoni_ocuvanja/Zadatak_7_2}
+
+\include{03_Zakoni_ocuvanja/Zadatak_7_3}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{04_Kruto_tijelo/Zadatak_8_1}
+
+\include{04_Kruto_tijelo/Zadatak_8_2}
+
+\include{04_Kruto_tijelo/Zadatak_8_3}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{05_Gravitacija/Zadatak_9_1}
+
+\include{05_Gravitacija/Zadatak_9_2}
+
+\include{05_Gravitacija/Zadatak_9_3}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\include{05_Gravitacija/Zadatak_10_1}
+
+\include{05_Gravitacija/Zadatak_10_2}
+
+\include{05_Gravitacija/Zadatak_10_3}
+
+\end{justify}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{apalike}
+
+%\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}

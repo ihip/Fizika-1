@@ -1,0 +1,45 @@
+
+
+
+Iznos sile kojom blok A djeluje na blok B jednaka je iznosu sile kojom blok B djeluje na blok A 
+
+$|\vec{F}_{AB}|=|\vec{F}_{BA}|$.
+
+Zapisujemo sve sile na tijelo A
+$$ \textbf{A:}\ \ \ \vec{F}_0+\vec{G}_A+\vec{R}_A + \vec{F}_{tr,A}+\vec{F}_{BA}=m_A\vec{a} \ \ \ \ \  /\cdot\vec{k}/\cdot\vec{j}$$
+i radimo projekcije na os $z$ i $y$.
+$$  \textbf{A,z:}\ \ F_0\cos(\frac{\pi}{2}+\vartheta)-m_Ag+R_A+0+0=0  $$
+Funkciju $\cos(\frac{\pi}{2}+\vartheta)$ možemo raspisati preko funkcije zbroja
+$$\cos(\frac{\pi}{2}+\vartheta)=\cos\frac{\pi}{2}\cos\vartheta-\sin\frac{\pi}{2}\sin\vartheta=-\sin\vartheta $$
+$$-F_0\sin\vartheta-m_ag+R_A=0\ \ \Rightarrow\ \ R_A=m_Ag+F_0\sin\vartheta $$
+Što ćemo ursti u izraz za $y$ os.
+$$  \textbf{A,y:}\ \ F_0\cos\vartheta+0 +0 -F_{tr,A}- F_{BA}=m_Aa   $$
+$$ F_0\cos\vartheta -\mu_kR_A- F_{BA}=m_Aa  $$
+\begin{equation}
+  F_0\cos\vartheta -\mu_k(m_Ag+F_0\sin\vartheta)- F_{BA}=m_Aa
+  \label{zadata_4_3_1}
+\end{equation}
+
+Zapisujemo sve sile na tijelo B
+$$ \textbf{B:}\ \ \ \vec{G}_B+\vec{R}_B + \vec{F}_{tr,B}+\vec{F}_{AB}=m_B\vec{a} \ \ \ \ \  /\cdot\vec{k}/\cdot\vec{j}$$
+i radimo projekcije na os $z$ i $y$.
+$$  \textbf{B,z:}\ \ -m_Bg+R_B+0+0=0  \ \ \Rightarrow\ \ R_B=m_Bg $$
+$$  \textbf{B,y:}\ \ 0+0-F_{tr,B}+F_{AB}=m_Ba  \ \ \Rightarrow\ \ F_{AB}=m_Ba+\mu_kR_B$$
+Spajanjem posljednja dva izraza dobivamo:
+\begin{equation}
+ F_{AB}=m_Ba+\mu_km_Bg.
+  \label{zadata_4_3_2}
+\end{equation}
+U izraz \ref{zadata_4_3_1} umjesto $F_{BA}$ uvrstimo \ref{zadata_4_3_2} dobivamo:
+$$  F_0\cos\vartheta -\mu_k(m_Ag+F_0\sin\vartheta)- m_Ba-\mu_km_Bg=m_Aa. $$
+$$ a(m_A+m_B)= F_0\cos\vartheta -\mu_k\left[(m_A+ m_B)g+F_0\sin\vartheta\right]$$
+$$ a= \frac{F_0\cos\vartheta -\mu_k\left[(m_A+ m_B)g+F_0\sin\vartheta\right]}{m_A+m_B}$$
+$$ a= \frac{42N\cos30^\circ -0,3\left[(5kg+2kg)9,81ms^{-2}+42N\sin30^\circ\right]}{5kg+2kg}= 1,353\ ms^{-2}$$
+
+
+
+
+
+
+
+

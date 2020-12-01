@@ -1,0 +1,494 @@
+
+%----------------------------------------------------------------------------------------
+
+
+%%%%%%%%%%%%%%% Za a5 format
+\documentclass[10pt]{book}
+\usepackage[a5paper,top=1.5cm, bottom=1cm, left = 1.5cm, right=1cm, twoside=true]{geometry}
+%%%%%%%%%%%%%% Za 
+%\documentclass[12pt]{report}
+%\usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={165mm,237mm},
+% left=25mm,
+% top=30mm,
+% }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\usepackage{graphicx} % Required for the inclusion of images
+
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{amssymb}
+
+\usepackage[document]{ragged2e}  %%  za obostrano poravnanje
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Lista
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumitem} % Customize lists
+%\setlist{topsep=1.8mm,itemsep=0.01mm} % Moze se posebno definirati razmak izmedu redova i prvog reda
+\setlist{nolistsep}  % Reduce spacing between bullet points and numbered lists
+
+\usepackage{url} %% za printanje imena
+
+
+\usepackage{setspace}  %% ovo je za razmak među redovima
+%\onehalfspacing
+%\doublespacing
+\setstretch{1.0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Brojaci
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{zadatak} %%%% Brojac
+\newcounter{cjelina}
+\setcounter{cjelina}{1}  %%%%%   Mjenjati ovisno o listu   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%\setcounter{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Lista
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumitem} % Customize lists
+\setlist{itemsep=0.3pt} % Reduce spacing between bullet points and numbered lists
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     Font
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[croatian]{babel}
+%\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+%\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents  Ovo je za hr
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+\usepackage[]{scrpage2}
+\usepackage[]{blindtext}
+ \usepackage{titlesec}
+%\pagestyle{scrheadings}
+%\setheadsepline[\textwidth]{0.25pt}{}
+
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Bjornstrup]{fncychap}
+
+\usepackage{color}
+\definecolor{boja}{RGB}{50, 180, 50}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+%\titleformat{\section}  {\normalfont\fontsize{12}{15}\bfseries}{\thesection}{1em}{}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\Large Sveučilište u Zagrebu\\ Geotehnički fakultet}\\[1.0cm] % Name of your university/college
+%\textsc{\Large Major Heading}\\[0.5cm] % Major heading such as course name
+%\textsc{\large Minor Heading}\\[0.5cm] % Minor heading such as course title
+
+\includegraphics{logo_gfv.png}\\[2.0cm] % Include a department/university logo - this will require the graphicx package
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Zadaci s vježbi iz kolegija Fizika 1}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\textsc{\large Akademska godina 2018./2019.}\\[0.5cm] % Minor heading such as course title
+
+%{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+\justify
+ 
+\begin{center}
+\begin{minipage}{0.8\textwidth}
+\begin{justify} 
+\vspace{1.2cm}
+\begin{center}
+doc. dr. sc. Ivan Hip\\
+dr. sc. Marko Petric\\
+dr. sc. Davor Stanko
+                     
+\end{center}
+
+\end{justify}
+\end{minipage}\\[3cm]
+\today
+\end{center}
+
+
+\end{titlepage}
+
+\pagenumbering{roman}
+
+
+\tableofcontents
+ 
+\clearpage
+
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%
+%\renewcommand\thesection{\arabic{section}} %%% to je za nurmiranje bez chapter 
+%%%%%%%%%%%%%%
+\chapter{MATEMATIČKI TEMELJI}
+
+
+
+\section{Vektori}
+
+
+%
+\input{Matematicki_temelji/Zadatak_M301}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Matematicki_temelji/Rjesenje_M301}
+\vspace{0.8cm}
+
+
+
+\input{Matematicki_temelji/Zadatak_M302}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Matematicki_temelji/Rjesenje_M302}
+
+\section{Mjerne jedinice}
+To ćemo trebati za provjeru imena zadatka i oznake:
+\path{Matematicki_temelji/Zadatak_M802}
+
+\input{Matematicki_temelji/Zadatak_M802}
+\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+
+\path{Matematicki_temelji/Rjesenje_M802}
+\input{Matematicki_temelji/Rjesenje_M802}
+\vspace{0.8cm} 
+
+\newpage
+\chapter{KINEMATIKA MATERIJALNE TOČKE}
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+
+\input{Kinematika_materijalne_tocke/Zadatak_K401}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K401}
+\vspace{0.8cm} 
+
+
+\input{Kinematika_materijalne_tocke/Zadatak_K502}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K502}
+\vspace{0.8cm}
+
+
+
+\input{Kinematika_materijalne_tocke/Zadatak_K601}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K601}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\input{Kinematika_materijalne_tocke/Zadatak_K442}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K442}
+\vspace{0.8cm} 
+
+
+\input{Kinematika_materijalne_tocke/Zadatak_K802}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K802}
+\vspace{0.8cm}
+
+
+
+\input{Kinematika_materijalne_tocke/Zadatak_K803}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K803}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\newpage
+\chapter{DNAMIKA MATERIJALNE TOČKE}
+
+\input{Dinamika_materijalne_tocke/Zadatak_D201}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Dinamika_materijalne_tocke/Rjesenje_D201}
+\vspace{0.8cm} 
+
+
+\input{Dinamika_materijalne_tocke/Zadatak_D301}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Dinamika_materijalne_tocke/Rjesenje_D301}
+\vspace{0.8cm}
+
+
+
+\input{Dinamika_materijalne_tocke/Zadatak_D305}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Dinamika_materijalne_tocke/Rjesenje_D305}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\input{Dinamika_materijalne_tocke/Zadatak_D601}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Dinamika_materijalne_tocke/Rjesenje_D601}
+\vspace{0.8cm} 
+
+
+\input{Dinamika_materijalne_tocke/Zadatak_D701}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Dinamika_materijalne_tocke/Rjesenje_D701}
+\vspace{0.8cm}
+
+
+
+\input{Dinamika_materijalne_tocke/Zadatak_D705}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Dinamika_materijalne_tocke/Rjesenje_D705}
+
+
+\newpage
+\chapter{ZAKONI OČUVANJA}
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\input{Zakoni_ocuvanja/Zadatak_C101}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Zakoni_ocuvanja/Rjesenje_C101}
+\vspace{0.8cm} 
+
+
+\input{Zakoni_ocuvanja/Zadatak_C602}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Zakoni_ocuvanja/Rjesenje_C602}
+\vspace{0.8cm}
+
+
+
+\input{Zakoni_ocuvanja/Zadatak_C401}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Zakoni_ocuvanja/Rjesenje_C401}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\input{Zakoni_ocuvanja/Zadatak_C701}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Zakoni_ocuvanja/Rjesenje_C701}
+\vspace{0.8cm} 
+
+
+\input{Zakoni_ocuvanja/Zadatak_C702}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Zakoni_ocuvanja/Rjesenje_C702}
+\vspace{0.8cm}
+
+
+
+\input{Zakoni_ocuvanja/Zadatak_C902}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Zakoni_ocuvanja/Rjesenje_C902}
+
+
+
+\newpage
+\chapter{KRUTO TIJELO}
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\input{Kruto_tijelo/Zadatak_R101}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kruto_tijelo/Rjesenje_R101}
+\vspace{0.8cm} 
+
+
+\input{Kruto_tijelo/Zadatak_R501}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kruto_tijelo/Rjesenje_R501}
+\vspace{0.8cm}
+
+
+
+\input{Kruto_tijelo/Zadatak_R302}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kruto_tijelo/Rjesenje_R302}
+%\vspace{0.8cm}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\newpage
+\chapter{GRAVITACIJA}
+
+\textit{Kod rješavanja zadataka koristite se sljedećim numeričkim vrijednostima:
+\begin{itemize}
+ \item gravitacijska konstanta: $\gamma = 6,67\cdot  10^{−11}\ Nm^2kg^{−2}$
+ \item masa Zemlje: $M_Z = 5,98 \cdot  10^{24}\ kg$
+ \item polumjer Zemlje: $R_Z = 6,371 \cdot 10^6\ m$
+ \item iznos ubrzanja slobodnog pada: $g = 9,81\ ms^{−2}$
+\end{itemize}
+}
+\vspace{1cm}
+
+\input{Gravitacija/Zadatak_G202}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Gravitacija/Rjesenje_G202}
+\vspace{0.8cm} 
+
+
+\input{Gravitacija/Zadatak_G505}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Gravitacija/Rjesenje_G505}
+\vspace{0.8cm}
+
+
+
+\input{Gravitacija/Zadatak_G603}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Gravitacija/Rjesenje_G603}
+
+
+%%%%%%%%%%%%%%%
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+\input{Gravitacija/Zadatak_G701}
+%\vspace{0.2cm}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Gravitacija/Rjesenje_G701}
+\vspace{0.8cm} 
+
+
+\input{Gravitacija/Zadatak_G704}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Gravitacija/Rjesenje_G704}
+\vspace{0.8cm}
+
+
+
+\input{Gravitacija/Zadatak_G706}
+\noindent
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Gravitacija/Rjesenje_G706}
+
+\chapter{RJEŠENJA}
+\section{MATEMATIČKI TEMELJI}
+%\addcontentsline{toc}{section}{\protect\numberline{}MATEMATIČKI TEMELJI}%
+
+
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Matematicki_temelji/Rjesenje_M301}
+
+
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Matematicki_temelji/Rjesenje_M302}
+
+
+
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Matematicki_temelji/Rjesenje_M802}
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+\section{KINEMATIKA MATERIJALNE TOČKE}
+%\addcontentsline{toc}{section}{\protect\numberline{}KINEMATIKA MATERIJALNE TOČKE}%
+
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K401}
+
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K502}
+
+{\color{boja} \rule{\linewidth}{0.3mm} }
+\input{Kinematika_materijalne_tocke/Rjesenje_K601}
+
+
+\stepcounter{cjelina} 
+\setcounter{zadatak}{0}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{apalike}
+
+%\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}

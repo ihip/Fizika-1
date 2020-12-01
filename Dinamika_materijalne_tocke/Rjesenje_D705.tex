@@ -1,0 +1,36 @@
+
+Sila napetosti niti kojom djeluje blok A na blok B jednaka je po iznosu sili napetosti kojom uteg B 
+djeluje na uteg A stoga pišemo
+$$ |\vec{T}_{AB}|=|\vec{T}_{BA}|=T. $$ 
+Kako bismo mogli rastaviti sile moramo izračunati kuteve $\alpha$ i $\beta$
+$$\tan\alpha=\frac{v}{a}   \ \ \Rightarrow \ \  \alpha=\arctan\frac{4m}{5m}=38,66^\circ, $$
+$$\tan\beta=\frac{v}{b}   \ \ \Rightarrow \ \  \beta=\arctan\frac{4m}{3m}=53,13^\circ .$$
+Zapisujemo sve sile koje djeluju na blok A i množimo skalarno s $\cdot\vec{j}$ 
+$$\vec{G}_{A,||} + \vec{G}_{A,\bot} + \vec{R}_A + \vec{F}_{tr,A} + \vec{T}_{BA}=m_A \vec{a}  \ \ \ \  /\cdot\vec{j}   $$
+Dobivamo sile u usporedne s lijevim nagibom kosine
+$$ -m_Ag\sin\alpha - \mu_km_Ag\cos\alpha + T =m_Aa. $$
+Izrazimo napetosti niti
+\begin{equation}
+ T= m_Ag\sin\alpha + \mu_km_Ag\cos\alpha + m_Aa. 
+ \label{zadatak_5_3_1}
+\end{equation}
+ 
+Isto radimo za blok B
+$$\vec{G}_{B,||} + \vec{G}_{B,\bot} + \vec{R}_B + \vec{F}_{tr,B} + \vec{T}_{AB}=m_B \vec{a}  \ \ \ \  /\cdot\vec{j}   $$
+\begin{equation}
+ m_Bg \sin\beta - \mu_km_Bg\cos\beta - T =m_Ba
+ \label{zadatak_5_3_2}
+\end{equation} 
+Uvrštavamo izraz \ref{zadatak_5_3_1} za napetost niti u izraz \ref{zadatak_5_3_2}
+$$ m_Bg \sin\beta - \mu_km_Bg\cos\beta - m_Ag\sin\alpha - \mu_km_Ag\cos\alpha - m_Aa =m_Ba.$$
+Sređujemo izraze:
+$$ g\left[ m_B(\sin\beta - \mu_k\cos\beta ) - m_A (\sin\alpha + \mu_k\cos\alpha) \right] =(m_A + m_B)a$$
+$$ a = \frac{m_B(\sin\beta - \mu_k\cos\beta ) - m_A (\sin\alpha + \mu_k\cos\alpha)}{m_A + m_B}\ g$$
+$$ a = \frac{15kg(\sin53,13^\circ - 0,2\cos53,13^\circ) - 10kg(\sin38,66^\circ + 0,2 \cos38,66^\circ )}
+{10kg+15kg}\ 9,81 \ ms^{-2} $$
+
+$$a = 0,94  \ ms^{-2}  $$
+
+
+
+
