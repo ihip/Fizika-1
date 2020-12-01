@@ -1,6 +1,6 @@
 # Fizika-1
 
-Zadaci iz kolegija Fizike 1 u akademskoj godini 2018./2019., svaki zadatak je snimljen u posebni file s jedinstvenom oznakom.
+Zadaci iz kolegija Fizike 1, svaki zadatak je snimljen u posebni file s jedinstvenom oznakom.
 
 Sadržaj:
 1. Matematički temelji
