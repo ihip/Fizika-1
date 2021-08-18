@@ -78,7 +78,9 @@
 \usepackage[utf8]{inputenc} % Required for including letters with accents  Ovo je za hr
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 
-\usepackage[]{scrpage2}
+%\usepackage[]{scrpage2} % HIP: obsolete! -> scrlayer-scrpage
+\usepackage[]{scrlayer-scrpage}
+
 \usepackage[]{blindtext}
  \usepackage{titlesec}
 %\pagestyle{scrheadings}
@@ -142,9 +144,10 @@ dr. sc. Davor Stanko
 
 \pagenumbering{roman}
 
-
 \tableofcontents
- 
+\clearpage
+
+\input{teorija/oznake}
 \clearpage
 
 \pagenumbering{arabic}
@@ -477,10 +480,10 @@ dr. sc. Davor Stanko
 
 \textit{Kod rješavanja zadataka koristite se sljedećim numeričkim vrijednostima:
 \begin{itemize}
- \item gravitacijska konstanta: $\gamma = 6,67\cdot  10^{−11}\ Nm^2kg^{−2}$
+ \item gravitacijska konstanta: $\gamma = 6,67\cdot  10^{-11}\ Nm^2kg^{-2}$
  \item masa Zemlje: $M_Z = 5,98 \cdot  10^{24}\ kg$
  \item polumjer Zemlje: $R_Z = 6,371 \cdot 10^6\ m$
- \item iznos ubrzanja slobodnog pada: $g = 9,81\ ms^{−2}$
+ \item iznos ubrzanja slobodnog pada: $g = 9,81\ ms^{-2}$
 \end{itemize}
 }
 \vspace{1cm}
