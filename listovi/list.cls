@@ -1,4 +1,4 @@
-%\NeedsTexFormat{LaTeX2e}
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{list}[2024/02/05 1.0 (IH)]
 
 \LoadClass[12pt,a4paper]{report}
