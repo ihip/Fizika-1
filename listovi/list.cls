@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{list}[2024/02/05 1.0 (IH)]
+\ProvidesClass{list}[2024/02/07 1.1 (IH)]
 
 \LoadClass[12pt,a4paper]{report}
 
@@ -20,7 +20,8 @@
     \vspace{1.6cm}
 } % \GlavaLista
 
-\newcommand{\PostaviStazu}[1]{\newcommand{\Staza}{#1}}
+\newcommand{\Staza}{}
+\newcommand{\PostaviStazu}[1]{\renewcommand{\Staza}{#1}}
 
 \newcommand{\Zadatak}[1]{
     %\stepcounter{zadatak}
@@ -34,3 +35,5 @@
     \GlavaLista
 } % \AtBeginDocument
 
+\newcommand{\Oznaka}[3]{}
+\newcommand{\Rokovi}[1]{}

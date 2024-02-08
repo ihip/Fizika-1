@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pregled}[2024/02/06 1.0 (IH)]
+\ProvidesClass{pregled}[2024/02/07 1.1 (IH)]
 
 \LoadClass[12pt,a4paper]{report}
 
@@ -14,7 +14,6 @@
 } % \Naslovnica
 
 \AtBeginDocument{
-    \newcommand{\Staza}{}
     \newcounter{cjelina}
     \newcounter{zadatak}
     \Naslovnica
@@ -28,6 +27,7 @@
     \vspace{1.6cm}
 } % \Cjelina
 
+\newcommand{\Staza}{}
 \newcommand{\PostaviStazu}[1]{\renewcommand{\Staza}{#1}}
 
 \newcommand{\Zadatak}[1]{
@@ -37,5 +37,5 @@
     \vspace{0.8cm}
 } % \Zadatak
 
-
-
+\newcommand{\Oznaka}[3]{\noindent\textbf{#1} [#2]\texttt{ #3}\\}
+\newcommand{\Rokovi}[1]{\texttt{> #1}\\}
