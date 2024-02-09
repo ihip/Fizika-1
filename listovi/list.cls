@@ -6,6 +6,7 @@
 \usepackage[croatian]{babel}
 \usepackage{enumitem} % Customize lists
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+\usepackage{graphicx} % Required for the inclusion of images
 
 \newcommand{\BrojLista}[1]{
     \newcounter{brojLista}
