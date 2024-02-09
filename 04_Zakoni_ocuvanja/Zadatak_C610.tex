@@ -1,0 +1,26 @@
+\Oznaka{}{Stanko??}{LaTeX}
+%\Komentar{}
+\Rokovi{2016-L6, 2017-L6, 2018-L6, 2019-L6, 2020-L6}
+\Tekst{Tijelo počinje klizati iz stanja mirovanja na visini od $0,8$ metara na vrhu kosine. Kolika je brzina tijela na dnu kosine ako je nagib kosine $30^\circ$,
+koeficijent kinetičkog trenja $0,43$?
+
+
+}
+\Rjesenje{$v=2,0 \ ms^{-1} $}
+\Postupak{Pišemo zakon očuvanja energije
+$$ E_k(B) + E_{p,G}(B)  = E_k(A) + E_{p,G}(A) + W_{AB}$$
+$$ \frac{1}{2}mv^2 + 0 = 0 + mgH + \vec{F}_{tr}\cdot\Delta\vec{r}  $$
+Ostalo je za izračunati rad sile trenja
+$$\vec{F}_{tr}\cdot\Delta\vec{r}=|\vec{F}_{tr}||\Delta\vec{r}|\cos \sphericalangle (\vec{F}_{tr},\Delta\vec{r})=F_{tr}\Delta r\cos(\pi)$$
+Pomak tijela $\Delta r$ možemo izaraziti iz visine kosine i kuta $\Delta r=H/\sin\vartheta$. Potrebno je 
+još zapisati silu trenja koja ovisi o kinematičkom koeficijentu trenja i sili kojom tijelo pritišće podlogu
+$F_{tr} = \mu_kmg\cos\vartheta $.
+$$\vec{F}_{tr}\cdot\Delta\vec{r}= - \mu_kmg\cos\vartheta\frac{H}{\sin\vartheta}= - \mu_k mgH\cot\vartheta$$
+Vraćamo se u zakon očuvanja energije
+$$ \frac{1}{2}mv^2 = mgH - \mu_k mgH\cot\vartheta  $$
+$$ v=\sqrt{2gH(1 - \mu_k\cot\vartheta)}$$
+$$ v = \sqrt{2 \cdot 9,81 \ ms^{-2} \cdot 0,8 \ m (1-0,43\cdot\cot30^\circ)}=2,0 \ ms^{-1} $$
+
+
+}
+

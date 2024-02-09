@@ -1,8 +1,7 @@
-
-\noindent 
-\textbf{\stepcounter{zadatak}
-\thecjelina.\thezadatak.}
-Automobil mase $m=2000\ kg$ giba se uz kosinu nagiba $\vartheta=15^\circ $ stalnom brzinom iznosa $60\ kmh^{-1}$.
+\Oznaka{}{Stanko??}{}
+%\Komentar{}
+\Rokovi{2015-L5, 2016-L7, 2017-L7, 2018-L7, 2019-L7, 2020-L7}
+\Tekst{Automobil mase $m=2000\ kg$ giba se uz kosinu nagiba $\vartheta=15^\circ $ stalnom brzinom iznosa $60\ kmh^{-1}$.
 Ukupna sila otpora (trenje kotrljanja i otpor zraka) iznosi $| \vec{F}_{otp}|=2000\ N $, a visina kosine je 
 $h=60\ m$. Izračunajte: 
 \begin{enumerate}[label=\alph*)]
@@ -10,3 +9,25 @@ $h=60\ m$. Izračunajte:
  \item rad pogonske sile od početka do kraja kosine;
  \item snagu automobila.
 \end{enumerate}
+
+
+}
+\Rjesenje{a)$ F=7078,03\ N $ b)$W= 1640844\ J  $ c) $P = 117967\ W$}
+\Postupak{
+\begin{enumerate}[label=\alph*)]
+ \item Ako je brzina stalna tada je rezultantna sila na automobil jednaka je nuli; 
+$\vec{v}=konstanta    \ \ \Rightarrow \ \ \vec{F}_R=\vec{0}.$
+
+$$ \vec{F} + \vec{F}_{otp} + \vec{G}_{||} + \vec{G}_{\bot} + \vec{R} = \vec{0} \ \ \ \  /\cdot\vec{j} $$
+$$ F - F_{otp} - mg\sin\vartheta = 0$$
+$$ F = F_{otp} + mg\sin\vartheta  $$
+$$ F = 2000N + 2000kg\ 9,81ms^{-2}\ \sin15^\circ = 7078,03\ N $$
+ \item  $$ W=\vec{F}\Delta \vec{r}=F\Delta r\cos 0^\circ $$
+ Pomak automobila možemo izraziti preko visine kosine i kuta
+ $$ W = F\frac{h}{\sin\vartheta} = 7078,03\frac{60m}{\sin15^\circ} = 1640844\ J $$
+ \item $$ P = \vec{F}\cdot\vec{v}=Fv $$
+Iznos brzine automobila je $ v = 60\ kmh^{-1} = 60\frac{1000\ m}{3600\ s}=16,67\ ms^{-1}$
+$$P=7078,03\ N 16,67\ ms^{-1} = 117967\ W$$
+\end{enumerate}
+
+}
