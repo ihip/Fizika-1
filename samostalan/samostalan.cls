@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{list}[2024/02/08 1.2 (IH)]
+\ProvidesClass{samostalan}[2024/02/08 1.0 (IH)]
 
 \LoadClass[12pt,a4paper]{report}
 
@@ -15,8 +15,9 @@
     \newcounter{zadatak}
 } % \BrojLista
 
-\newcommand{\GlavaLista}{
-    \textsc{\Huge Fizika 1 - List sa zadacima \arabic{brojLista}}
+\newcommand{\GlavaLista}{\noindent{}
+    \textsc{\Large Fizika 1}\par\bigskip
+    \textsc{\Huge Zadaci za samostalan rad \arabic{brojLista}}
     \vspace{1.6cm}
 } % \GlavaLista
 
@@ -43,5 +44,5 @@
     \noindent 
     \textbf{\arabic{cjelina}.\arabic{zadatak}.} #1\par
 } % \Tekst
-\newcommand{\Rjesenje}[1]{}
+\newcommand{\Rjesenje}[1]{\vspace{0.3cm}\noindent{}Rješenje: #1\par}
 \newcommand{\Postupak}[1]{}
