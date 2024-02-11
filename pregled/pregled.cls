@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pregled}[2024/02/08 1.2 (IH)]
+\ProvidesClass{pregled}[2024/02/11 1.3 (IH)]
 
 \LoadClass[12pt,a4paper]{report}
 
@@ -40,13 +40,19 @@
 \newcommand{\Staza}{}
 \newcommand{\PostaviStazu}[1]{\renewcommand{\Staza}{#1}}
 
+\newcommand{\StazaZadatka}{}
 \newcommand{\Zadatak}[1]{
-    %\stepcounter{zadatak}
-    %\textbf{\arabic{brojLista}.\arabic{zadatak}.}
+    \renewcommand{\StazaZadatka}{\Staza#1}
     \noindent$#1$ % ispiši oznaku zadatka
-    \input{\Staza#1}
+    \input{\StazaZadatka}\par
     \vspace{0.8cm}
 } % \Zadatak
+
+\newcommand{\Slika}[2]{
+    \begin{center}
+        \includegraphics[scale=#1]{\StazaZadatka#2}
+    \end{center}
+} % \Slika
 
 % naredbe u izvornim datotekama zadataka
 \newcommand{\Oznaka}[3]{\noindent\textbf{#1} [#2]\texttt{ #3}\\}
@@ -54,7 +60,7 @@
 \newcommand{\Rokovi}[1]{\texttt{> #1}\\}
 \newcommand{\Tekst}[1]{\stepcounter{zadatak}
     \noindent 
-    \textbf{\arabic{cjelina}.\arabic{zadatak}.} #1\par
+    \textbf{\arabic{cjelina}.\arabic{zadatak}.} #1
 } % \Tekst
 \newcommand{\Rjesenje}[1]{\vspace{0.3cm}\noindent{}Rješenje: #1\par}
 \newcommand{\Postupak}[1]{}

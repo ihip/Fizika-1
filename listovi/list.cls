@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{list}[2024/02/08 1.2 (IH)]
+\ProvidesClass{list}[2024/02/11 1.3 (IH)]
 
 \LoadClass[12pt,a4paper]{report}
 
@@ -24,12 +24,18 @@
 \newcommand{\Staza}{}
 \newcommand{\PostaviStazu}[1]{\renewcommand{\Staza}{#1}}
 
+\newcommand{\StazaZadatka}{}
 \newcommand{\Zadatak}[1]{
-    %\stepcounter{zadatak}
-    %\textbf{\arabic{brojLista}.\arabic{zadatak}.}
-    \input{\Staza#1}
+    \renewcommand{\StazaZadatka}{\Staza#1}
+    \input{\StazaZadatka}\par
     \vspace{0.8cm}
 } % \Zadatak
+
+\newcommand{\Slika}[2]{
+    \begin{center}
+        \includegraphics[scale=#1]{\StazaZadatka#2}
+    \end{center}
+} % \Slika
 
 \AtBeginDocument{
     \pagenumbering{gobble}
@@ -42,7 +48,7 @@
 \newcommand{\Rokovi}[1]{}
 \newcommand{\Tekst}[1]{\stepcounter{zadatak}
     \noindent 
-    \textbf{\arabic{cjelina}.\arabic{zadatak}.} #1\par
+    \textbf{\arabic{cjelina}.\arabic{zadatak}.}#1
 } % \Tekst
 \newcommand{\Rjesenje}[1]{}
 \newcommand{\Postupak}[1]{}
