@@ -27,7 +27,9 @@
 \newcommand{\StazaZadatka}{}
 \newcommand{\Zadatak}[1]{
     \renewcommand{\StazaZadatka}{\Staza#1}
+%    \begin{minipage}{\textwidth}
     \input{\StazaZadatka}\par
+%    \end{minipage}
     \vspace{0.8cm}
 } % \Zadatak
 

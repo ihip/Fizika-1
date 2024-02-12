@@ -8,6 +8,10 @@
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
 \usepackage{graphicx} % Required for the inclusion of images
 
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{amssymb}
+
+
 % brojači
 \newcounter{cjelina}
 \newcounter{zadatak}
@@ -43,7 +47,7 @@
 \newcommand{\StazaZadatka}{}
 \newcommand{\Zadatak}[1]{
     \renewcommand{\StazaZadatka}{\Staza#1}
-    \noindent$#1$ % ispiši oznaku zadatka
+    \noindent\textit{#1} % ispiši oznaku zadatka
     \input{\StazaZadatka}\par
     \vspace{0.8cm}
 } % \Zadatak
